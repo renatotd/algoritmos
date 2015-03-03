@@ -1,0 +1,43 @@
+// r.cpp : main project file.
+
+#include "stdafx.h"
+#include "comio.h"
+#include <iostream>
+
+
+
+using namespace std;
+
+float calculo_salariominimo(float salariobruto);
+
+void main()
+{
+	float salariobruto, salarioneto, promedio, s = 0,n;
+	do {
+      cout << "ingrese numero de empleados";
+	  cin >> n;
+	} while (n <= 0);
+	for (int i=1; i<=n; i++)
+		{
+			do{
+		       cout << "ingrese salario bruto";
+	           cin >> salariobruto;
+			}
+		if (salariobruto > 2* salariobruto)
+		    salarioneto = calculosalarioneto(salariobruto);
+		else
+		   salariobruto = salariominimo;
+		cout <<"salario neto es : " salarioneto;
+		     s=s + salarioneto;
+		}
+	    promedio = s/n;
+	    cout<<"el promedio es :"<<promedio;
+	    getch();
+	    return0; 
+		}
+float calculo_salarioneto(float salariobruto)
+{
+	float x;
+	x= salariobruto-(salariobruto*0.12)-(salariobruto*0.13)
+	return x;
+}
